@@ -1,3 +1,4 @@
+// import PropTypes from 'prop-types'
 
 const FeedbackStats = ({feedback}) => {
   //calculate ratings average 
@@ -20,3 +21,7 @@ const FeedbackStats = ({feedback}) => {
 }
 
 export default FeedbackStats;
+
+// FeedbackStats.PropTypes = {
+//   feedback: PropTypes.array.isRequired
+// }
