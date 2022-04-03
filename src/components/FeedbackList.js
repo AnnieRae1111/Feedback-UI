@@ -1,6 +1,6 @@
 import FeedbackItem from "./FeedbackItem";
 
-const FeedBackList = ({feedback}) => {
+const FeedBackList = ({feedback, handleDelete}) => {
   console.log(feedback)
   if(!feedback || feedback.length === 0){
     <p>Loading Feedback </p>
@@ -12,6 +12,8 @@ const FeedBackList = ({feedback}) => {
         key={item.id}
         rating={item.rating}
         item={item}
+        handleDelete={handleDelete}
+
         />
       ))}
       
